@@ -33,4 +33,4 @@ for i in [100]:
     d['endeligBesvarelse'] = response[6].get_text().split()[-1]
     d['spoergsmaal'] = response[8].get_text().strip() 
     d['begrundelse'] = response[10].get_text().strip()
-	data.append(d)
+    data.append(d)
