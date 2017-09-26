@@ -10,15 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import re
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.colors as colors
-import matplotlib.cm as cmx
-import seaborn as sns
-sns.set_style("white")
 
-#%% suppe
 data = []
 for i in [100]:
     time.sleep(2)
@@ -41,8 +33,4 @@ for i in [100]:
     d['endeligBesvarelse'] = response[6].get_text().split()[-1]
     d['spoergsmaal'] = response[8].get_text().strip() 
     d['begrundelse'] = response[10].get_text().strip()
-    
-    #print(spoerger)
-    #'print(spoergsmaal)
-    data.append(d)
-#%% tingdok__breadcrumb-b__item
+	data.append(d)
