@@ -10,7 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import re
-
+#Loop, der henter de første 100 spg. fra 1. samling 2015
 data = []
 for i in [100]:
     time.sleep(2)
